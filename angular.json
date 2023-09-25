@@ -50,7 +50,8 @@
             ],
             "styles": [
               "src/styles/styles.css",
-              "src/styles/input.css"
+              "src/styles/inputs.css",
+              "src/styles/buttons.css"
             ],
             "scripts": []
           },

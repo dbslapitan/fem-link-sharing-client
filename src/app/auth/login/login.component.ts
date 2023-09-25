@@ -30,4 +30,8 @@ export class LoginComponent {
     }
     return "";
   }
+
+  onSubmit(){
+    console.log(this.loginForm.getRawValue());
+  }
 }

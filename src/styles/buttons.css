@@ -1,0 +1,17 @@
+.action-btn{
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 2.875rem;
+  line-height: 150%;
+}
+
+.action-btn.full{
+  width: 100%;
+}
+
+.action-btn.fill\:purple{
+  background-color: #633CFF;
+  border: 1px solid #633CFF;
+  color: #FFFFFF;
+}

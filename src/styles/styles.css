@@ -23,17 +23,28 @@ html{
   margin-top: 2.5rem;
 }
 
-.form-container{
-  margin-top: 4rem;
-  padding: 0 2rem;
-}
-
-.page-description{
+.description{
   color: #737373;
   font-size: 1rem;
   font-weight: 400;
   line-height: 150%;
   margin-top: 0.5rem;
+}
+
+.description.center{
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.description.center > a{
+  color: #633CFF;
+  display: block;
+  text-decoration: none;
+}
+
+.form-container{
+  margin-top: 4rem;
+  padding: 0 2rem;
 }
 
 .page-title{
