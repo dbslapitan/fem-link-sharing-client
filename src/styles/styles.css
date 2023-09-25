@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:before, *:after{
+  box-sizing: inherit;
+}
+
+body{
+  height: 100%;
+}
+
+html{
+  font-family: 'Instrument Sans', sans-serif;
+  height: 100vh;
+}
+
+.auth-form{
+  margin-top: 2.5rem;
+}
+
+.form-container{
+  margin-top: 4rem;
+  padding: 0 2rem;
+}
+
+.page-description{
+  color: #737373;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 0.5rem;
+}
+
+.page-title{
+  color: #333333;
+  font-size: clamp(1.5rem, 1.0229rem + 2.0356vw, 2rem);
+  font-weight: 700;
+  line-height: 150%;
+}
