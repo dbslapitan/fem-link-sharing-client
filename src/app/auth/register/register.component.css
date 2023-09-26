@@ -4,6 +4,10 @@
   padding-top: 2rem;
 }
 
+.login-container{
+  max-width: 29.75rem;
+}
+
 .logo-container{
   display: block;
   margin-left: 2rem;
