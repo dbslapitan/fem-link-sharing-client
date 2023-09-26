@@ -4,7 +4,8 @@ import {FormBuilder, FormControl, Validators} from "@angular/forms";
 @Component({
   selector: 'login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css',
+  './login-tablet.component.css']
 })
 export class LoginComponent {
 

@@ -5,7 +5,8 @@ import {passwordNotMatchValidator} from "../../validators/password-not-match.val
 @Component({
   selector: 'register',
   templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css']
+  styleUrls: ['./register.component.css',
+  './register-tablet.component.css']
 })
 export class RegisterComponent {
 

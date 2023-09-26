@@ -1,0 +1,31 @@
+@media only screen and (min-width: 768px){
+  :host{
+    display: flex;
+    padding: 0;
+    background-color: inherit;
+  }
+
+  .auth-form{
+    margin-top: 2.5rem;
+  }
+
+  .description.center > a {
+    display: inline;
+  }
+
+  .form-container{
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    margin-top: 3.1875rem;
+    padding: 2.5rem;
+  }
+
+  .login-container{
+    margin: auto;
+  }
+
+  .logo-container{
+    margin: 0;
+    text-align: center;
+  }
+}
