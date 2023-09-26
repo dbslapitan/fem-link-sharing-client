@@ -23,18 +23,16 @@
         <span class="error-message" *ngIf="passwordControl.invalid && passwordControl.touched">Please check again</span>
       </div>
       <div class="input-container">
-        <label for="confirm-password" [ngClass]="checkConfirmPasswordError()">Password</label>
+        <label for="confirm-password" [ngClass]="checkConfirmPasswordError()">Confirm password</label>
         <input type="password" id="confirm-password" placeholder="At least 8 characters"
                (focus)="confirmPasswordControl.markAsUntouched()"
                formControlName="confirmPassword">
         <span class="input-img password"></span>
         <span class="error-message" *ngIf="registerForm.errors?.passwordNotMatch && confirmPasswordControl.touched">Please check again</span>
       </div>
-      <button class="action-btn full fill:purple" type="submit">Login</button>
-      <p class="description center">Don’t have an account? <a href="#">Create account</a></p>
+      <p class="password-hint">Password must contain at least 8 characters</p>
+      <button class="action-btn full fill:purple" type="submit">Create new account</button>
+      <p class="description center">Already have an account? <a href="#">Login</a></p>
     </form>
-    <div>
-      {{registerForm.errors?.passwordNotMatch | json}}
-    </div>
   </div>
 </div>

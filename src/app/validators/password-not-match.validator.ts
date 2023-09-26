@@ -5,7 +5,6 @@ export function passwordNotMatchValidator(): ValidatorFn {
     const formControl = form as FormGroup;
     const password = formControl.controls['password'];
     const confirmPassword = formControl.controls['confirmPassword'];
-    console.log(password.getRawValue(), confirmPassword.getRawValue())
     if(password.value !== confirmPassword.value){
       return {
         passwordNotMatch: true
