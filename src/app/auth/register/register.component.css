@@ -1,0 +1,14 @@
+:host{
+  display: block;
+  height: 100%;
+  padding-top: 2rem;
+}
+
+.logo-container{
+  display: block;
+  margin-left: 2rem;
+}
+
+.action-btn{
+  margin-top: 1.5rem;
+}

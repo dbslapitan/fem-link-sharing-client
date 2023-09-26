@@ -1,0 +1,40 @@
+<div class="login-container">
+  <a class="logo-container" href="">
+    <img src="assets/logo-devlinks-large.svg">
+  </a>
+  <div class="form-container">
+    <h1 class="page-title">Create account</h1>
+    <p class="description">Let’s get you started sharing your links!</p>
+    <form class="auth-form" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <div class="input-container">
+        <label for="reg-email" [ngClass]="checkInputForError(emailControl)">Email address</label>
+        <input type="text" id="reg-email" placeholder="e.g. alex@email.com"
+               (focus)="emailControl.markAsUntouched()"
+               formControlName="email">
+        <span class="input-img email"></span>
+        <span class="error-message"  *ngIf="emailControl.invalid && emailControl.touched">Can't be empty</span>
+      </div>
+      <div class="input-container">
+        <label for="reg-password" [ngClass]="checkInputForError(passwordControl)">Password</label>
+        <input type="password" id="reg-password" placeholder="At least 8 characters"
+               (focus)="passwordControl.markAsUntouched()"
+               formControlName="password">
+        <span class="input-img password"></span>
+        <span class="error-message" *ngIf="passwordControl.invalid && passwordControl.touched">Please check again</span>
+      </div>
+      <div class="input-container">
+        <label for="confirm-password" [ngClass]="checkConfirmPasswordError()">Password</label>
+        <input type="password" id="confirm-password" placeholder="At least 8 characters"
+               (focus)="confirmPasswordControl.markAsUntouched()"
+               formControlName="confirmPassword">
+        <span class="input-img password"></span>
+        <span class="error-message" *ngIf="registerForm.errors?.passwordNotMatch && confirmPasswordControl.touched">Please check again</span>
+      </div>
+      <button class="action-btn full fill:purple" type="submit">Login</button>
+      <p class="description center">Don’t have an account? <a href="#">Create account</a></p>
+    </form>
+    <div>
+      {{registerForm.errors?.passwordNotMatch | json}}
+    </div>
+  </div>
+</div>

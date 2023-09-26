@@ -7,16 +7,16 @@
     <p class="description">Add your details below to get back into the app</p>
     <form class="auth-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
       <div class="input-container">
-        <label for="reg-email" [ngClass]="checkInputForError(emailControl)">Email address</label>
-        <input type="text" id="reg-email" placeholder="e.g. alex@email.com"
+        <label for="log-email" [ngClass]="checkInputForError(emailControl)">Email address</label>
+        <input type="text" id="log-email" placeholder="e.g. alex@email.com"
                (focus)="emailControl.markAsUntouched()"
                formControlName="email">
         <span class="input-img email"></span>
         <span class="error-message"  *ngIf="emailControl.invalid && emailControl.touched">Can't be empty</span>
       </div>
       <div class="input-container">
-        <label for="reg-password" [ngClass]="checkInputForError(passwordControl)">Password</label>
-        <input type="password" id="reg-password" placeholder="Password"
+        <label for="log-password" [ngClass]="checkInputForError(passwordControl)">Password</label>
+        <input type="password" id="log-password" placeholder="Password"
                (focus)="passwordControl.markAsUntouched()"
                formControlName="password">
         <span class="input-img password"></span>
