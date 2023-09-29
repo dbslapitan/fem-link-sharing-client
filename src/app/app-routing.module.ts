@@ -6,6 +6,7 @@ import {LinksComponent} from "./links/links.component";
 import {ProfileComponent} from "./profile/profile.component";
 
 const routes: Routes = [
+  {path: '', redirectTo: '/links', pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'links', component: LinksComponent},

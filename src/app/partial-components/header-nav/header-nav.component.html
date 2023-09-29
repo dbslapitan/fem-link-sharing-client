@@ -2,11 +2,12 @@
   <nav>
     <img src="/assets/logo-devlinks-small.svg" alt="DevLinks Logo">
     <a [routerLink]="'/links'" routerLinkActive="link-active" class="nav-link">
-      <span class="link"></span>
+      <span class="link"></span> <span class="text" *ngIf="!(isMobile$ | async)">Links</span>
     </a>
     <a [routerLink]="'/profile'" routerLinkActive="link-active" class="nav-link profile">
-      <span class="profile"></span>
+      <span class="profile"></span> <span class="text" *ngIf="!(isMobile$ | async)">Profile</span>
     </a>
     <a href="#" class="preview-link"></a>
   </nav>
 </header>
+<div></div>
