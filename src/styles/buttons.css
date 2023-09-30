@@ -15,3 +15,12 @@
   border: 1px solid #633CFF;
   color: #FFFFFF;
 }
+
+.action-btn.outline{
+  color: #633CFF;
+  background-color: #FFFFFF;
+  border: 1px solid #633CFF;
+  line-height: 150%;
+  font-size: 1rem;
+  font-weight: 600;
+}

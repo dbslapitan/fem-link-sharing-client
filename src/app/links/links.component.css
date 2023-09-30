@@ -1,0 +1,60 @@
+:host{
+  display: block;
+  margin-top: 1rem;
+}
+
+.action-btn.outline{
+  margin-top: 2.5rem;
+}
+
+.drag-btn{
+  display: flex;
+  align-items: center;
+  background-color: inherit;
+  border: none;
+}
+
+.drag-btn > .icon{
+  background-image: url("/assets/icon-drag-and-drop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 100%;
+  width: 0.75rem;
+}
+
+.drag-btn > .text{
+  margin-left: 0.5rem;
+  color: #737373;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.link-container{
+  background-color: #FAFAFA;
+  display: flex;
+  padding: 1.25rem;
+}
+
+.links-container{
+  background-color: #FFFFFF;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  padding: 1.5rem;
+}
+
+.link-list{
+  margin-top: 1.5rem;
+}
+
+.remove-btn{
+  background-color: inherit;
+  border: none;
+  color: #737373;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%;
+  margin-left: auto;
+  margin-right: 0;
+}
