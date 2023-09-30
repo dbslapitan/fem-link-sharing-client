@@ -39,15 +39,14 @@ nav{
   background-color: #737373;
   display: inline-block;
   height: 1.25rem;
-  margin-left: 0.5rem;
   mask-position: center;
   mask-repeat: no-repeat;
   width: 1.5rem;
 }
 
 .nav-link > span.text{
-
   background-color: inherit;
+  margin-left: 0.5rem;
 }
 
 .nav-link > span.link{

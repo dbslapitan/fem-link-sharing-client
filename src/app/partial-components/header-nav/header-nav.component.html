@@ -1,11 +1,14 @@
 <header>
   <nav>
-    <img src="/assets/logo-devlinks-small.svg" alt="DevLinks Logo">
+    <img src="/assets/logo-devlinks-small.svg" alt="DevLinks Logo" *ngIf="(isMobile$ | async); else logoOnMobile">
+    <ng-template #logoOnMobile>
+      <img src="/assets/logo-devlinks-large.svg" alt="DevLinks Logo">
+    </ng-template>
     <a [routerLink]="'/links'" routerLinkActive="link-active" class="nav-link">
       <span class="link"></span> <span class="text" *ngIf="!(isMobile$ | async)">Links</span>
     </a>
     <a [routerLink]="'/profile'" routerLinkActive="link-active" class="nav-link profile">
-      <span class="profile"></span> <span class="text" *ngIf="!(isMobile$ | async)">Profile</span>
+      <span class="profile"></span> <span class="text" *ngIf="!(isMobile$ | async)">Profile Details</span>
     </a>
     <a href="#" class="preview-link"></a>
   </nav>

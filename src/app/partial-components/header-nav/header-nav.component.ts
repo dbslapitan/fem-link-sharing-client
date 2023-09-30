@@ -5,7 +5,8 @@ import {Observable} from "rxjs";
 @Component({
   selector: 'header-nav',
   templateUrl: './header-nav.component.html',
-  styleUrls: ['./header-nav.component.css']
+  styleUrls: ['./header-nav.component.css',
+  './header-nav-tablet.component.css']
 })
 export class HeaderNavComponent implements OnInit{
 
